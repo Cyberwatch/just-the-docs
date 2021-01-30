@@ -44,14 +44,18 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 });
 </script>
 
-### deprecated: `legacy_light`
-{: .d-inline-block .no_toc }
+### Automatic color scheme
 
-New (v0.4.2)
-{: .label .label-green }
+If you want your site to react to the user's system light/dark selection, define the `dark_color_scheme` parameter. This will enable automatic switching between `color_scheme` for light mode and `dark_color_scheme` for dark mode.
 
+#### Example
+{: .no_toc}
 
-In Just the Docs version `0.4.2`, we changed the default syntax highlighting theme for the `light` color scheme to have higher contrast. Users who want to use the old highlighting need to explicitly opt-in with the deprecated `legacy_light` color scheme. In a future major release of Just the Docs, we will remove this color scheme.
+```yaml
+color_scheme: light
+# Automatically switch to this when a user has a system dark mode enabled
+dark_color_scheme: dark
+```
 
 ## Custom schemes
 
